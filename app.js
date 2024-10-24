@@ -1,11 +1,9 @@
 import express from "express";
-import connectDB from "./config/db.js";
-import maintenanceRouter from "./routes/maintenance.js";
-import vehicleRouter from "./routes/vehicle.js";
-import workshopRouter from "./routes/workshop.js";
+import "dotenv/config";
+import maintenanceRouter from "./src/routes/maintenance.js";
+import vehicleRouter from "./src/routes/vehicle.js";
+import workshopRouter from "./src/routes/workshop.js";
 
-
-connectDB();
 
 const app = express()
 
