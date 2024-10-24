@@ -1,8 +1,8 @@
 import express from "express";
 import "dotenv/config";
-import maintenanceRouter from "./src/routes/maintenance.js";
-import vehicleRouter from "./src/routes/vehicle.js";
-import workshopRouter from "./src/routes/workshop.js"
+import maintenanceRouter from "./routes/maintenance.js";
+import vehicleRouter from "./routes/vehicle.js";
+import workshopRouter from "./routes/workshop.js"
 
 
 const app = express()
