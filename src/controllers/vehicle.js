@@ -6,6 +6,7 @@ try {
     await vehicle.save();
     res.status(201).json(vehicle);
 } catch (error) {
+    console.log(error);
     res.status(400).json({ error: 'Erro ao criar vehicle' });
 }
 };
